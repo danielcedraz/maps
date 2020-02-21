@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Maps</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/Knockout/knockout-3.5.1.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/fontAwesome/fontAwesome.js"></script>
+</head>
+<body class="h-100">
+    <div class="container-fluid h-100">
+        <main role="main" class="pb-3 h-100">
+            @RenderBody()
+        </main>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
